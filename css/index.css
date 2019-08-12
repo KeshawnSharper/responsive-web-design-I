@@ -1,3 +1,320 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+nav{
+	display:inline-block;
+	/* Stetch goal: sticky top */
+	position: fixed;
+	top:0;
+	width:100%;
+}
+@media (max-width:500px){
+	nav{
+		position: relative;
+		display:flex;
+		
+	}
+}
+
+a{
+	margin-left:90px;
+	text-decoration: none;
+	color:grey;
+}
+@media (max-width:500px){
+	#nav-item{
+		width:150%;
+		margin-left:0px;
+		
+		display:block;
+		text-align: center;
+		padding:15px;
+		border: 2px solid lightgray;
+	}
+}
+
+@media(max-width:800px){
+	li{
+	
+	}
+}
 
 
+.logo{
+	margin-left:90px;
+}
+
+	
+@media (max-width:800px){
+nav{
+	
+	margin-left: -75px;
+	position: relative;
+	width:100%
+}
+}
+@media (max-width:800px){
+	ul{
+		width:120%;
+		margin-left:-10px;
+	}
+}
+@media (max-width:800px){
+	#logo{
+		display:none;
+	}
+}
+
+.title,
+.header-img{
+	display: inline-block;
+}
+@media (max-width:500px){
+	#header-img{
+		display:none;
+	}
+	}
+
+h1{
+	font-size:64px;
+}
+
+
+
+
+
+.heading{
+	margin-top: 70px;
+	margin-left: 250px;
+	text-align: center;
+}
+.title{
+	
+	position: absolute;
+	margin-left:-260px;
+	margin-top:50px;
+
+	
+}
+@media (max-width:500px){
+	.title{
+		position: relative;
+		margin-top: 0px;
+		margin-bottom:30%;
+	}
+}
+
+button{
+	background: white;
+	padding:15px;
+	border-color:black;
+}
+
+.middle-cont{
+	margin-left: 200px;
+}
+@media (max-width:500px){
+	.middle-cont{
+	margin-left:-40px;
+	
+	}
+}
+li{
+	display:inline-block
+}
+@media (max-width:500px){
+	li{
+	display:block;
+	width:100%;
+	margin-left:-30px
+	}
+}
+@media(max-width:800px){
+	#mobile-logo{
+		display:block;
+	}
+}
+
+#mobile-logo{
+	display:none
+}
+@media (max-width:800px){
+	.middle-cont{
+	margin-left:-70px;
+	
+	
+	}
+}
+.mid-top-cont{
+	display:inline-block;
+	width:100%;
+}
+
+.mid-top-card{
+	width:35%;
+	margin-left:50px;
+	display:inline-block;
+}
+@media (max-width:500px){
+	#mid-top-card{
+	width:90%;
+	display:block;
+	
+	margin-bottom:1rem;
+	
+	}
+}
+.mid-bot-cont{
+	display:inline-block;
+	width:100%;
+	margin-left:50px;
+}
+
+	
+@media (max-width:500px){
+	.mid-bot-cont{
+	display:block;
+	width:100%;
+	border-bottom: 2px solid black ;
+	
+	margin-bottom:50px;
+	}
+}
+@media (max-width:500px){
+	#mid-bot-card{
+	margin-bottom: 20px;
+	width:100%;
+	display:block
+
+
+	}
+}
+@media (max-width:500px){
+	.mid-bot-card{
+	margin-bottom: 20px;
+	width:100%;
+	display:block
+
+	}
+}
+
+
+@media (max-width:800px){
+	#mid-bot-card{
+	margin-bottom: 20px;
+	margin-left: 40px;
+	
+	}
+}
+.mid-bot-card{
+	width:25%;
+	display: inline-block;
+	margin-bottom:90px;
+}
+img{
+	margin-left:45px;
+	max-width:100%;
+}
+
+
+@media (max-width:800px){
+	.mid-top-card{
+		margin-left:100px;
+	}
+}
+
+@media (max-width:500px){
+	ul{width:100%;
+	text-align:center;}
+}
+
+
+.address{
+	margin-left: 250px;
+	margin-bottom: 50px;
+}
+
+@media (max-width:500px){
+	.address{
+		margin-left:0px;
+
+	}
+}
+@media (max-width:800px){
+	.address{
+		margin-left:0px;
+
+margin-top: 50px;
+	}
+}
+
+
+
+
+footer{
+	text-align: center;
+	
+}
